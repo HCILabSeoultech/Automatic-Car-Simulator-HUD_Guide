@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - path
+  - Road
+  - TrafficLight
+  - flare
+  - path2
+  - truck
+  - hudoff
+  - warning
+  - Human
+  - normal
+  - afraid
+  - OtherCars
+  - warning1
+  - warning2
+  - hudon1
+  - hudoff1
+  - hudon2
+  - hudoff2
+  - path3
+  - light
+  - raincar
+  - path4
+  - braking
+  - Racing
+  - Beam
+  - signal
+  - turnright_sound
+  - stay1way
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Terrain
+  - TerrainTileVisibiliyBlocker
+  - Road
+  - Traffic
+  - Building
+  - Obsracles
+  - Player
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
