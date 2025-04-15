@@ -19,13 +19,15 @@ public class HUD_guideLine_Controller : MonoBehaviour
     public GameObject rightHard;
     //운전자 인풋관련 
     [SerializeField] private DemoCarController controller;
+    [SerializeField] private HUD_Controller hud_controller;
     private void FixedUpdate()
     {
         float steeringAngle = controller.rawSteeringInput * 30;
         
         Debug.Log(steeringAngle);
 
-        UpdateHUDBySteering(steeringAngle);
+       
+       
     }
     void UpdateHUDBySteering(float steeringAngle)
     {
