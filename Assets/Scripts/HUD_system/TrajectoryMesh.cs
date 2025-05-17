@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TrajectoryMesh : MonoBehaviour
 {
+    
     [SerializeField] private DemoCarController controller;
     public float wheelBase = 2.705f;
     public float arcLength = 30f;
