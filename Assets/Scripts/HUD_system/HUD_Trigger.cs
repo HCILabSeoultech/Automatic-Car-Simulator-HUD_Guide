@@ -23,11 +23,20 @@ public class HUD_Trigger : MonoBehaviour
         }
         if (col.gameObject.tag == "End")
         {
-            HUD_Red.SetActive(true);
+            HUD_Red.SetActive(false);
             HUD_Green.SetActive(false);
         }
 
         
+    }
+
+    private void OnTriggerStay(Collider col)
+    {
+        if(col.gameObject.tag == "truck")
+        {
+            HUD_Red.SetActive(true);
+            HUD_Green.SetActive(false);
+        }
     }
 
     // private void OnTriggerExit(Collider col)
