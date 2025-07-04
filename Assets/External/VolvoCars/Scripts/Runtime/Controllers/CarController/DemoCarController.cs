@@ -41,6 +41,7 @@ public class DemoCarController : MonoBehaviour
     [SerializeField] private VolvoCars.Data.DoorIsOpenR1L doorIsOpenR1L = default; // R1L stands for Row 1 Left.
     [SerializeField] private VolvoCars.Data.LampBrake lampBrake = default;
 
+
     #region Private variables not shown in the inspector
     private VolvoCars.Data.Value.Public.WheelTorque wheelTorqueValue = new VolvoCars.Data.Value.Public.WheelTorque(); // This is the value type used by the wheelTorque data item.     
     private VolvoCars.Data.Value.Public.LampGeneral lampValue = new VolvoCars.Data.Value.Public.LampGeneral(); // This is the value type used by lights/lamps
@@ -160,6 +161,8 @@ public class DemoCarController : MonoBehaviour
             brakeLightIsOn = false;
         }
         #endregion
+
+        
 
     }
 
