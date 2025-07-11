@@ -26,17 +26,56 @@ public class HUD_Trigger : MonoBehaviour
             HUD_Red.SetActive(false);
             HUD_Green.SetActive(false);
         }
+         if (col.gameObject.tag == "truck")
+            
+        {            
+            
+            
+                HUD_Green.SetActive(false);
+                HUD_Red.SetActive(true);
+                Debug.Log("충돌위험");
+            
+            
+        }
 
         
     }
 
-    private void OnTriggerStay(Collider col)
+   
+    
+    private void OnTriggerExit(Collider col)
     {
-        if(col.gameObject.tag == "truck")
+        
         {
-            HUD_Red.SetActive(true);
-            HUD_Green.SetActive(false);
+            if (col.gameObject.tag == "truck")
+            {
+                StartCoroutine(hudGreenOn());
+                Debug.Log("벗어남");
+            }
         }
+    }
+
+    IEnumerator hudGreenOn_off()
+    {
+        yield return StartCoroutine(hudGreenOn());
+        yield return StartCoroutine(hudoff());
+    }
+
+
+
+    IEnumerator hudGreenOn()
+    {
+        HUD_Green.SetActive(true);
+        HUD_Red.SetActive(false);
+
+        yield return null;
+    }
+      IEnumerator hudoff()
+    {
+        HUD_Green.SetActive(false);
+        HUD_Red.SetActive(false);
+
+        yield return null;
     }
 
     // private void OnTriggerExit(Collider col)
