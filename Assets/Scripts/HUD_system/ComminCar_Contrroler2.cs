@@ -26,7 +26,7 @@ public class ComminCar_Contrroler2 : MonoBehaviour
     private void FixedUpdate()
     {
         //moveCar();
-        //animateWheelMeshs();
+        animateWheelMeshs();
         
 
 
@@ -91,5 +91,17 @@ public class ComminCar_Contrroler2 : MonoBehaviour
 
             }
         
+    }
+    private void animateWheelMeshs() // 휠 메쉬 보이는 거 조절 
+    {
+        Vector3 pos = Vector3.zero;
+        Quaternion rot = Quaternion.identity;
+
+        for (int i = 0; i < 4; i++)
+        {
+            wheels[i].GetWorldPose(out pos, out rot);
+            wheelMeshs[i].transform.position = pos;
+            wheelMeshs[i].transform.rotation = rot;
+        }
     }
 }
