@@ -35,10 +35,10 @@ public class Comming_Car_Contrroler : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider col)
+    private void OnTriggerStay(Collider col)
     
     {
-        if (col.gameObject.tag == "breaking")
+        if (col.gameObject.tag == "breaking" || col.gameObject.tag == "truck")
         {
           StopCar();
         }
@@ -87,7 +87,7 @@ public class Comming_Car_Contrroler : MonoBehaviour
             {
 
 
-                  wheels[i].brakeTorque = 1000f;
+                  wheels[i].brakeTorque = 10000000f;
 
 
             }

@@ -10,7 +10,7 @@ using static Controller;
 public class Controller : MonoBehaviour
 {
     // 아두이노 쓰기위한 코드
-    public SerialController serialController; 
+    //public SerialController serialController; 
     LogitechGSDK.LogiControllerPropertiesData properties; 
 
     // For tutorial, see the Data section below and Start().
@@ -82,11 +82,11 @@ public class Controller : MonoBehaviour
     public string status = "off"; // 주행모드 선택 디폴트 off
 
 
-    public GameObject Timer;
+   // public GameObject Timer;
     // 데이터 로그2
-    public string dateText;
-    public float speedValue;
-    private bool timerOn = false;
+    //public string dateText;
+    //public float speedValue;
+    //private bool timerOn = false;
 
     private void Awake()
     {
@@ -107,15 +107,15 @@ public class Controller : MonoBehaviour
      
 
         //데이터 로그2 저장 
-        DataLoggingManager.Instance.SaveLoggedData();
-        Debug.Log("OnDisable!! Data log2 save");
+        //DataLoggingManager.Instance.SaveLoggedData();
+        //Debug.Log("OnDisable!! Data log2 save");
     }
 
     private void Start()
     {
         //데이터2 로그 저장위한 
-        dateText = DateTime.Now.ToString("yyyy-MM-dd-HH-mm:ss.fff"); //로그 데이터 시작될때 위에 뜨는것 현재 시점
-        DataLoggingManager.Instance.CreateInitialData();
+        //dateText = DateTime.Now.ToString("yyyy-MM-dd-HH-mm:ss.fff"); //로그 데이터 시작될때 위에 뜨는것 현재 시점
+        //DataLoggingManager.Instance.CreateInitialData();
 
         // Subscribe to data items this way. (There is also a SubscribeImmediate method if you don't need to be on the main thread / game loop.)
         // First define the action, i.e. what should happen when an updated value comes in:
@@ -134,31 +134,31 @@ public class Controller : MonoBehaviour
         // End of tutorial
 
         parkInput = 0;
-        Timer.SetActive(false); // 타이머 초기화및 작동안함
-        timerOn = false;
+        //Timer.SetActive(false); // 타이머 초기화및 작동안함
+        //timerOn = false;
 
     }
 
     // 시작 시점에 StartCoroutine(SaveDataLoggingRoutine()) 호출
     // FixedUpdate의 저장 코드 삭제
     // 추가로 이벤트 시작, 종료 시점에 DataLoggingManager.Instance.AddLogData(dateText, timeText, speedValue, parkInput, SteeringInput*450f, "@@@ 이벤트 시작(또는 종료)"); 호출
-    IEnumerator SaveDataLoggingRoutine()
-    {
-        while (true)
-        {
-            dateText = DateTime.Now.ToString("yyyy-MM-dd");
-            string timeText = DateTime.Now.ToString("HH:mm:ss.fff");
+    //IEnumerator SaveDataLoggingRoutine()
+    //{
+    //    while (true)
+    //    {
+    //        dateText = DateTime.Now.ToString("yyyy-MM-dd");
+    //        string timeText = DateTime.Now.ToString("HH:mm:ss.fff");
 
-            // 데이터 로그 저장
-            if (!DataLoggingManager.Instance.isFinished)
-            {
-                DataLoggingManager.Instance.AddLogData(dateText, timeText, speedValue, parkInput, SteeringInput * 450f);
-            }                
+    //        // 데이터 로그 저장
+    //        if (!DataLoggingManager.Instance.isFinished)
+    //        {
+    //            DataLoggingManager.Instance.AddLogData(dateText, timeText, speedValue, parkInput, SteeringInput * 450f);
+    //        }                
 
-            // 1초에 5번 저장, 1/5초 마다 호출 반복
-            yield return new WaitForSecondsRealtime(1 / 5);
-        }        
-    }
+    //        // 1초에 5번 저장, 1/5초 마다 호출 반복
+    //        yield return new WaitForSecondsRealtime(1 / 5);
+    //    }        
+    //}
     private void FixedUpdate()
     {
         
@@ -189,24 +189,24 @@ public class Controller : MonoBehaviour
 
         
          
-        #region log2 저장코드
-        speedValue = ((int)(3.6f * Mathf.Abs(velocity.Value) + 0.9f)); //현재 속도 Km 단위
-        dateText = DateTime.Now.ToString("yyyy-MM-dd");
-        string timeText = DateTime.Now.ToString("HH:mm:ss.fff");
+        //#region log2 저장코드
+        //speedValue = ((int)(3.6f * Mathf.Abs(velocity.Value) + 0.9f)); //현재 속도 Km 단위
+        //dateText = DateTime.Now.ToString("yyyy-MM-dd");
+        //string timeText = DateTime.Now.ToString("HH:mm:ss.fff");
 
-        // 데이터 로그 저장
-        if (!DataLoggingManager.Instance.isFinished)
-            DataLoggingManager.Instance.AddLogData(dateText, timeText, speedValue, parkInput, SteeringInput*450f);
+        //// 데이터 로그 저장
+        //if (!DataLoggingManager.Instance.isFinished)
+        //    DataLoggingManager.Instance.AddLogData(dateText, timeText, speedValue, parkInput, SteeringInput*450f);
 
 
-        // 움직이면 타이머와 데이타 로그 작동!!
-        if (speedValue > 0 && !timerOn)
-        {
-            Timer.SetActive(true);
-            SaveDataLoggingRoutine();
-            timerOn = true;
-        }
-        #endregion
+        //// 움직이면 타이머와 데이타 로그 작동!!
+        //if (speedValue > 0 && !timerOn)
+        //{
+        //    Timer.SetActive(true);
+        //    SaveDataLoggingRoutine();
+        //    timerOn = true;
+        //}
+        //#endregion
 
  
 
