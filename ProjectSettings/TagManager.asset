@@ -35,6 +35,8 @@ TagManager:
   - HUD_system
   - Start
   - End
+  - left
+  - right
   layers:
   - Default
   - TransparentFX
