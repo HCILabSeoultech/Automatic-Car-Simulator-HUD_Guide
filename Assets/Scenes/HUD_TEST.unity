@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 111.30066, g: 106.23718, b: 109.20892, a: 1}
+  m_IndirectSpecularColor: {r: 106.16675, g: 97.76422, b: 90.88263, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9622,7 +9622,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1779608299}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &118013415
 BoxCollider:
@@ -14573,7 +14573,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &247700447
 Transform:
   m_ObjectHideFlags: 0
@@ -25429,6 +25429,7 @@ GameObject:
   - component: {fileID: 414452578}
   - component: {fileID: 414452583}
   - component: {fileID: 414452584}
+  - component: {fileID: 414452585}
   m_Layer: 12
   m_Name: HUD_tester
   m_TagString: Untagged
@@ -25617,7 +25618,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 414452576}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7051e8870b2f0b24cace14e5698435fd, type: 3}
   m_Name: 
@@ -25633,7 +25634,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 414452576}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04d170cdf9a4f6647b5299b67b68284b, type: 3}
   m_Name: 
@@ -25654,6 +25655,25 @@ MonoBehaviour:
   - {fileID: 1642619009}
   hypassleft: {fileID: 1782477323}
   hypassright: {fileID: 958649424}
+--- !u!114 &414452585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414452576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86a0413b38dd4c44982eedcda8b85ebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  length_truck: {fileID: 558962726}
+  length_narrowRoad: {fileID: 247700446}
+  length_commingcar1: {fileID: 571088780}
+  length_commingcar2: {fileID: 1199508933}
+  length_parking: {fileID: 1400022441}
+  length_construction: {fileID: 1515115894}
+  length_hypass: {fileID: 1849784892}
 --- !u!1 &414769385
 GameObject:
   m_ObjectHideFlags: 0
@@ -31079,7 +31099,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &558962727
 Transform:
   m_ObjectHideFlags: 0
@@ -31093,7 +31113,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1779608299}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &558962728
 BoxCollider:
@@ -31691,7 +31711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &571088781
 Transform:
   m_ObjectHideFlags: 0
@@ -62266,7 +62286,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1199508934
 Transform:
   m_ObjectHideFlags: 0
@@ -71979,7 +71999,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1400022442
 Transform:
   m_ObjectHideFlags: 0
@@ -82978,7 +82998,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1515115895
 Transform:
   m_ObjectHideFlags: 0
@@ -96787,7 +96807,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1849784893
 Transform:
   m_ObjectHideFlags: 0
