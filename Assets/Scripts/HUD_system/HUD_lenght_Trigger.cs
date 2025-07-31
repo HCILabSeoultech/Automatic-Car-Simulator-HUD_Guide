@@ -11,6 +11,8 @@ public class HUD_lenght_Trigger : MonoBehaviour
     public GameObject length_parking;
     public GameObject length_construction;
     public GameObject length_hypass;
+
+
     
 
    private void OnTriggerEnter(Collider col)
