@@ -10,7 +10,7 @@ public Transform vehicle;
 void Update()
 {
     float distance = Vector3.Distance(vehicle.position, hudOrigin.position);
-    float hudLength = Mathf.Clamp(distance, 0f, 20f);
+    float hudLength = distance;
 
     // 1. 길이 조절
     Vector3 scale = hudLine.localScale;

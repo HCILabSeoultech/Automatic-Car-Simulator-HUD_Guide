@@ -28,10 +28,10 @@ public class HUD_Road_Trigger : MonoBehaviour
         {
             HUD_Green.SetActive(true);
             HUD_Red.SetActive(false);
-            HUD_GREEN_COMMING_CAR.SetActive(true);
-            HUD_RED_COMMING_CAR.SetActive(false);
-            HUD_GREEN_COMMING_CAR2.SetActive(false);
-            HUD_RED_COMMING_CAR2.SetActive(true);
+            HUD_GREEN_COMMING_CAR.SetActive(false);
+            HUD_RED_COMMING_CAR.SetActive(true);
+            HUD_GREEN_COMMING_CAR2.SetActive(true);
+            HUD_RED_COMMING_CAR2.SetActive(false);
                      
             
             for (int i = 0; i < 3; i++)
