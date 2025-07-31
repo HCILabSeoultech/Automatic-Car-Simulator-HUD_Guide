@@ -42,6 +42,10 @@ public class HUD_lenght_Trigger : MonoBehaviour
     {
         length_parking.SetActive(true);
     }
+    if (col.gameObject.name == "Construction_start")
+    {
+        length_construction.SetActive(true);
+    }
     if (col.gameObject.name == "Hypass_start")
     {
         length_hypass.SetActive(true);
@@ -53,6 +57,7 @@ public class HUD_lenght_Trigger : MonoBehaviour
         length_narrowRoad.SetActive(false);
         length_commingcar1.SetActive(false);
         length_commingcar2.SetActive(false);
+        length_parking.SetActive(false);
         length_parking.SetActive(false);
         length_hypass.SetActive(false);
     }
