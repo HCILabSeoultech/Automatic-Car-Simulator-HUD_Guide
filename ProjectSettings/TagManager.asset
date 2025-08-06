@@ -37,6 +37,7 @@ TagManager:
   - End
   - left
   - right
+  - hipass
   layers:
   - Default
   - TransparentFX
