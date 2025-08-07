@@ -10,8 +10,8 @@ public class HUD_Road_Trigger : MonoBehaviour
     public GameObject HUD_RED_COMMING_CAR;
     public GameObject HUD_GREEN_COMMING_CAR2;
     public GameObject HUD_RED_COMMING_CAR2;
-    public GameObject[] HUD_GREEN_2way_CAR;
-    public GameObject[] HUD_RED_2way_CAR;
+    // public GameObject[] HUD_GREEN_2way_CAR;
+    // public GameObject[] HUD_RED_2way_CAR;
     public GameObject hypassleft;
     public GameObject hypassright;
 
@@ -34,12 +34,12 @@ public class HUD_Road_Trigger : MonoBehaviour
             HUD_RED_COMMING_CAR2.SetActive(false);
                      
             
-            for (int i = 0; i < 3; i++)
-            {
-                HUD_GREEN_2way_CAR[i].SetActive(true);
-                HUD_RED_2way_CAR[i].SetActive(false);
+            // for (int i = 0; i < 3; i++)
+            // {
+            //     HUD_GREEN_2way_CAR[i].SetActive(true);
+            //     HUD_RED_2way_CAR[i].SetActive(false);
                 
-            }
+            // }
         }
         if (col.gameObject.tag == "End")
         {
@@ -49,12 +49,12 @@ public class HUD_Road_Trigger : MonoBehaviour
             HUD_RED_COMMING_CAR.SetActive(false);
             HUD_GREEN_COMMING_CAR2.SetActive(false);
             HUD_RED_COMMING_CAR2.SetActive(false);
-            for (int i = 0; i < 3; i++)
-            {
-                HUD_GREEN_2way_CAR[i].SetActive(false);
-                HUD_RED_2way_CAR[i].SetActive(false);
+            // for (int i = 0; i < 3; i++)
+            // {
+            //     HUD_GREEN_2way_CAR[i].SetActive(false);
+            //     HUD_RED_2way_CAR[i].SetActive(false);
                 
-            }
+            // }
 
         }
          if (col.gameObject.tag == "truck")
@@ -126,12 +126,12 @@ public class HUD_Road_Trigger : MonoBehaviour
         HUD_RED_COMMING_CAR.SetActive(false);
         HUD_GREEN_COMMING_CAR2.SetActive(true);
         HUD_RED_COMMING_CAR2.SetActive(false);
-       for (int i = 0; i < 3; i++)
-            {
-                HUD_GREEN_2way_CAR[i].SetActive(true);
-                HUD_RED_2way_CAR[i].SetActive(false);
+    //    for (int i = 0; i < 3; i++)
+    //         {
+    //             HUD_GREEN_2way_CAR[i].SetActive(true);
+    //             HUD_RED_2way_CAR[i].SetActive(false);
                 
-            }
+    //         }
 
 
         yield return null;
@@ -144,12 +144,12 @@ public class HUD_Road_Trigger : MonoBehaviour
         HUD_RED_COMMING_CAR.SetActive(false);
         HUD_GREEN_COMMING_CAR2.SetActive(false);
         HUD_RED_COMMING_CAR2.SetActive(false);
-        for (int i = 0; i < 4; i++)
-            {
-                HUD_GREEN_2way_CAR[i].SetActive(false);
-                HUD_RED_2way_CAR[i].SetActive(false);
+        // for (int i = 0; i < 4; i++)
+        //     {
+        //         HUD_GREEN_2way_CAR[i].SetActive(false);
+        //         HUD_RED_2way_CAR[i].SetActive(false);
                 
-            }
+        //     }
         yield return null;
     }
 
