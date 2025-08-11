@@ -7,6 +7,12 @@ public class On_Green : MonoBehaviour
     public GameObject HUD_GREEN_COMMING_CAR;
     public GameObject HUD_RED_COMMING_CAR;
 
+    void Start()
+    {
+                HUD_GREEN_COMMING_CAR.SetActive(false);
+                HUD_RED_COMMING_CAR.SetActive(false);
+
+    }
 
     private void OnTriggerEnter(Collider col)
 
