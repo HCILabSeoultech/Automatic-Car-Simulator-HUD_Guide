@@ -7,6 +7,7 @@ public class Voice_Trigger : MonoBehaviour
     public AudioSource turnLeftVoice;
     public AudioSource turnRightVoice;
     public AudioSource hypassVoice;
+    public AudioSource EndVoice;
 
     private void OnTriggerEnter(Collider col)
     {
@@ -22,7 +23,12 @@ public class Voice_Trigger : MonoBehaviour
         {
             PlayVoice(hypassVoice);
         }
+        else if (col.gameObject.CompareTag("Finish"))
+        {
+            PlayVoice(EndVoice);
+        }
     }
+
 
     private void PlayVoice(AudioSource voice)
     {

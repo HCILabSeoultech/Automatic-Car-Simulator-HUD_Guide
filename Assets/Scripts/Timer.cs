@@ -22,13 +22,13 @@ public class Timer : MonoBehaviour
     enum Time_Only
     {
         Only10,
-        Only5
+        Only1
         
     }
     void Start()
     {
         InitializeTimer();
-        Debug.Log("event1 start");
+    //    Debug.Log("event1 start");
     }
 
     public void InitializeTimer()
@@ -95,9 +95,9 @@ public class Timer : MonoBehaviour
 
             }
 
-            if (_remainingTime <= 300f && _remainingTime >= 299f) //5분
+            if (_remainingTime <= 60f && _remainingTime >= 59f) //1분
             {
-                audiosourceTime_Only.clip = audioClipTTSTime_Only[(int)Time_Only.Only5];
+                audiosourceTime_Only.clip = audioClipTTSTime_Only[(int)Time_Only.Only1];
                 audiosourceTime_Only.Play();
 
             }

@@ -82,11 +82,11 @@ public class Controller : MonoBehaviour
     public string status = "off"; // 주행모드 선택 디폴트 off
 
 
-   // public GameObject Timer;
+   public GameObject Timer;
     // 데이터 로그2
     public string dateText;
     public float speedValue;
-    //private bool timerOn = false;
+    private bool timerOn = true;
 
     private void Awake()
     {
@@ -134,8 +134,8 @@ public class Controller : MonoBehaviour
         // End of tutorial
 
         parkInput = 0;
-        //Timer.SetActive(false); // 타이머 초기화및 작동안함
-        //timerOn = false;
+        Timer.SetActive(false); // 타이머 초기화및 작동안함
+        timerOn = false;
 
     }
 
@@ -200,11 +200,11 @@ public class Controller : MonoBehaviour
 
 
         // 움직이면 타이머와 데이타 로그 작동!!
-        if (speedValue > 0 )//& !timerOn)
+        if (speedValue > 0 ) //& !timerOn)
         {
-        //    Timer.SetActive(true);
+           Timer.SetActive(true);
            SaveDataLoggingRoutine();
-        //    timerOn = true;
+           timerOn = true;
         }
         #endregion
 

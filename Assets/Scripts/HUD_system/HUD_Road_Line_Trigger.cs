@@ -105,7 +105,7 @@ public class HUD_Road_Line_Trigger : MonoBehaviour
             if (col.gameObject.tag == "truck")
             {
                 StartCoroutine(hudGreenOn());
-                Debug.Log("벗어남");
+                //Debug.Log("벗어남");
             }
         }
     }
