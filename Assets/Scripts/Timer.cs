@@ -39,35 +39,35 @@ public class Timer : MonoBehaviour
     }
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.Alpha0)) //트레이닝 모드
-        //{
-        //    Paused = true; // timer 기능을 멈춘다.
-        //    timeLimit = 3;
-        //    _remainingTime = timeLimit * 60; // 분을 초로 변환
-        //    UpdateTimerText();
+        if (Input.GetKeyDown(KeyCode.Alpha0)) //트레이닝 모드
+        {
+           Paused = true; // timer 기능을 멈춘다.
+           timeLimit = 3;
+           _remainingTime = timeLimit * 60; // 분을 초로 변환
+           UpdateTimerText();
 
-        //}
+        }
 
-        //if (Input.GetKeyDown(KeyCode.Alpha1)) // 실제 주행
+        if (Input.GetKeyDown(KeyCode.Alpha1)) // 실제 주행
         
-        //{ 
-        //    Paused = true; // timer 기능을 멈춘다.
-        //    timeLimit = 25;
-        //    _remainingTime = timeLimit * 60; // 분을 초로 변환
-        //    UpdateTimerText();
-        //}
+        { 
+           Paused = true; // timer 기능을 멈춘다.
+           timeLimit = 25;
+           _remainingTime = timeLimit * 60; // 분을 초로 변환
+           UpdateTimerText();
+        }
 
-        //if(Paused == true && controller.speedValue > 0)
-        //{
-        //    Paused = false;
-        //}
+        if(Paused == true && controller.speedValue > 0)
+        {
+           Paused = false;
+        }
 
 
-        //if (!Paused)
-        //{
-        //    // 멈추지 않은 경우에만 실행
-        //    UpdateTimer();
-        //}
+        if (!Paused)
+        {
+           // 멈추지 않은 경우에만 실행
+           UpdateTimer();
+        }
        
     }
 
