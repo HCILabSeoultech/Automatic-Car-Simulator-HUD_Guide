@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 112.21936, g: 107.14868, b: 110.33771, a: 1}
+  m_IndirectSpecularColor: {r: 111.42822, g: 106.31189, b: 109.220276, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12107,7 +12107,7 @@ GameObject:
   - component: {fileID: 116060588}
   m_Layer: 0
   m_Name: Comming_Car_End
-  m_TagString: Untagged
+  m_TagString: End
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
