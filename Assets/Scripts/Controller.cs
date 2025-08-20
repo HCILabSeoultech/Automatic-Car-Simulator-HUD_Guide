@@ -217,7 +217,7 @@ public class Controller : MonoBehaviour
             if (LogitechGSDK.LogiUpdate() && LogitechGSDK.LogiIsConnected((int)LogitechKeyCode.FirstIndex))
         {
             //������ �ǵ�� ����
-            LogitechGSDK.LogiPlaySpringForce(0, 0, 50, 50); //핸들포스 중앙으로!!
+            LogitechGSDK.LogiPlaySpringForce(0, 0, 25, 50); //핸들포스 중앙으로!!
             #region
             //float rawSteeringInput = LogitechInput.GetAxis("Steering Horizontal");
             //float rawForwardInput = LogitechInput.GetAxis("Gas Vertical");
