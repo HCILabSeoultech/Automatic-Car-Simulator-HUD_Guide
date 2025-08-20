@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 111.42822, g: 106.31189, b: 109.220276, a: 1}
+  m_IndirectSpecularColor: {r: 106.164795, g: 97.76465, b: 90.887146, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1624,7 +1624,7 @@ MonoBehaviour:
   audiosourceTime_Only: {fileID: 25552735}
   audioClipTTSTime_Only:
   - {fileID: 8300000, guid: 9fa731450be8a0c4bb928ab6fdc9c355, type: 3}
-  - {fileID: 8300000, guid: 2b0b1c5919592974fb0a267a5521dc5c, type: 3}
+  - {fileID: 8300000, guid: df7908561d1326540ae7934352a6d196, type: 3}
   controller: {fileID: 1779608296}
 --- !u!4 &25552737
 Transform:
