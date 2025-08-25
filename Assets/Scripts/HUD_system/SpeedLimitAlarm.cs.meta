@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 47226a4a657d3d04c9d9c9cd31666b1b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - velocity: {fileID: 11400000, guid: 3aab31d7b50b44db0b672cf402eaeb4d, type: 2}
+  - warningText: {instanceID: 0}
+  - alarmSound: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
