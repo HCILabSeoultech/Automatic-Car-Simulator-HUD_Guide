@@ -7,7 +7,7 @@ using UnityEngine;
 public class SpeedLimitAlarm : MonoBehaviour
 {
     [Header("Settings")]
-    public float speedLimit = 100f; // 제한 속도 (km/h)
+    public float speedLimit = 110f; // 제한 속도 (km/h)
 
     [Header("References")]
     public VolvoCars.Data.Velocity velocity;  // 차량 속도 데이터

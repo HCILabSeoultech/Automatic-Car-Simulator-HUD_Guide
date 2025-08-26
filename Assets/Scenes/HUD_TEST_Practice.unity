@@ -24927,8 +24927,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -294.1, y: -112.1}
-  m_SizeDelta: {x: 875, y: 532}
+  m_AnchoredPosition: {x: -554.6, y: -197.9}
+  m_SizeDelta: {x: 874.8, y: 531.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &223596972
 MonoBehaviour:
@@ -87334,7 +87334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 940274864}
-  timeLimit: 3
+  timeLimit: 5
   audiosourceTime_Only: {fileID: 818205017}
   audioClipTTSTime_Only:
   - {fileID: 8300000, guid: 9fa731450be8a0c4bb928ab6fdc9c355, type: 3}
